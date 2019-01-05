@@ -1,0 +1,406 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*
+* Navigation Begining
+*/
+
+nav.navbar.fixed-top.navbar-expand-lg.menu {
+    margin-top: 2vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 3vh;
+}
+
+ul.navbar-nav.ml-auto {
+    margin-right: 5vw;
+}
+
+li.nav-item {
+    border: 1px solid #ffffff;
+    margin-left: 2vw;
+    transition: border 0.5s ease;
+}
+li.nav-item:hover {
+    border: 1px solid rgba(255, 102, 0, 0.0);
+}
+
+a.nav-link {
+    color: #FFFFFF !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;  
+    margin: 1px 10px;
+}
+
+/*
+* Navigation End
+*/
+
+/*
+* Home Begining
+*/
+
+.home_section{
+    height: 100vh;
+    background-image: url("../images/banner/home_banner_bw.jpg");
+    background-size: cover;
+    position:relative;
+}
+
+.home_row{
+    position:relative;
+    top:25%; 
+    height:50%; 
+    text-align:center;
+}
+
+.col_icon{
+    margin-top: 5vh;
+}
+
+.social_icon{
+    margin-left: 3vw;
+    transition: color 0.5s ease;
+    
+}
+.fa-linkedin-in:hover{
+    color: #0270AD;
+    font-size: 3.1em;
+}
+
+.fa-github:hover{
+    color : #753A58;    
+    font-size: 3.1em;
+}
+.fa-envelope:hover{
+    color: #D54A3F;    
+    font-size: 3.1em;
+}
+
+/*
+* Home End
+*/
+
+/*
+* About Me Begining
+*/
+
+.aboutme_section{
+    height: 80vh;
+}
+
+.title{
+    margin-top: 50px;
+    color: #293540;
+    font-weight: bold;
+}
+
+.aboutme_card{
+    border-right: 3px solid #D54A3F;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-style: italic;
+    color: #989898;
+}
+
+.aboutme_text{
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color:#1c1e29;
+    font-weight:400;
+    text-align: center
+}
+
+/*
+* Experiences Me Begining
+*/
+
+ /* .experience_img{
+     text-align: center;
+} 
+
+.experience_img img{
+    width: 90vw;
+    padding-top: 50px;
+} */
+
+/*
+* Experiences Me End
+*/
+
+/*
+* From Blog Post Begin
+*/
+
+.fromMyBlog_section{
+    padding-bottom: 50px;
+}
+
+.blog_post-over-row{
+    padding-top: 50px;
+}
+
+.blog_post_card{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto , 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 25px;
+    background: #f5f5f5;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.16);
+    transition: color 0.5s ease;
+    transition: background 0.5s ease;
+    
+}
+
+.blog_post_card:hover{
+    background: #F74D4D;
+    color: rgb(255, 255, 255)
+}
+
+.blog_post_title{
+    text-decoration: none !important;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.blog_post_card:hover a{
+    color:rgb(255, 255, 255);
+}
+
+.blog_post_card:hover .fa-angle-right{
+    color: rgb(255, 255, 255)
+}
+
+.blog_post_title:hover{
+    color:rgb(0, 0, 0);
+}
+
+.blog_post_card_row{
+    margin-top: 15px;
+}
+
+.blog_post_img{
+    border-radius: 20px;
+}
+
+.blog_post_date {
+    font-size: 14px;
+}
+
+.blog_post_tags{
+    text-align: right;
+    padding-bottom: 10px;
+}
+.blog_post_more{
+    font-size: 1.1em;
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.5);
+    text-decoration: none !important;
+}
+
+.blog_post_more:hover{
+    text-decoration: none !important;
+}
+.blog_post_more i {
+    color: rgb(0, 0, 0);
+}
+
+.readmore_card{
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/*
+* From Blog Post End
+*/
+
+
+/*
+* From My Project Begin
+*/
+.fromMyProject_section{
+    margin-top: 50px; 
+    padding-bottom: 100px;   
+}
+
+.flip-container{
+    padding-top: 50px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+    margin: 0;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    width: 100%;
+    height: 50vh;
+    text-align: center;  
+    
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    background: #293540;
+}
+.flip-container:hover .flipper, .flip-container.hover .flipper, .flip-container.flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.back-frame{
+    margin-top: 5%;
+    padding: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16;
+    line-height: 20px;
+}
+
+.back-frame p{
+    color: #FFFFFF;
+}
+
+.project_read_more{
+    text-decoration: none !important;
+    font-size: 18px;
+    color: #F74D4D;
+    border: 1px solid #F74D4D;
+    border-radius: 20px;
+    padding:10px 25px;
+}
+
+.project_read_more:hover{
+    color: rgba(247, 77, 77, 0.8);
+    border: 2px solid rgba(247, 77, 77, 0.8);
+}
+
+/*
+* From My Project End
+*/
+
+/*
+* Contact Section Begin
+*/
+.contact_section{
+    margin-top: 50px;
+}
+.contact_text{
+    border: 3px solid #293540;
+    border-radius: 20px;
+    padding: 20px 40px;
+    text-align: center;
+    color: #293540;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.contact_text:hover{ 
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #293540;
+}
+
+.contact_text a{
+    text-decoration: none !important;
+    color: #293540;
+}
+
+
+/*
+* Contact Section End
+*/
+
+/*
+* Footer
+*/
+.footer_cantainer{
+    background: #293540;
+    margin-top: 50px; 
+    padding-top: 20px;
+}
+
+.section{
+    padding-top: 10px;
+}
+
+/* Section One*/
+
+.footer_section_one p{
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.footer_section_one_link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer_section_one_link:hover{
+    color: #FFFFFF;
+}
+
+/* Section Two*/
+.tag{
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 3px 5px;
+    margin-top: 5px;
+}
+.footer_section_two a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tag:hover{
+    color: #293540;
+    background: rgba(255, 255, 255, 255.8);
+}
+
+/* Section Three*/
+.footer_section_three a{
+    text-decoration: none;
+}
+.footer_section_three p{
+    color: rgba(255, 255, 255, 0.8);  
+}
+
+.menu_div a:first-child{
+    color: red;
+}
