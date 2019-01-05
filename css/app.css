@@ -2,14 +2,15 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    /* overflow-x:hidden; */
 }
 
 /*
 * Navigation Begining
 */
 
-nav.navbar.fixed-top.navbar-expand-lg.menu {
-    margin-top: 2vh;
+nav.navbar{
+    padding-top: 2vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3vh;
 }
@@ -34,6 +35,17 @@ a.nav-link {
     margin: 1px 10px;
 }
 
+
+.solidify nav{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0) ;
+}
+
+.solidify a.nav-link{
+    font-size: 13px;  
+}
+
+
 /*
 * Navigation End
 */
@@ -51,10 +63,20 @@ a.nav-link {
 
 .home_row{
     position:relative;
-    top:25%; 
-    height:50%; 
+    /* top:25%;  */
+    /* height:50%;  */
     text-align:center;
 }
+
+@media only screen and (max-width: 600px) {
+    .home_title {
+      font-size: 50px;
+    }
+
+    .home_sub_title{
+        font-size: 30px;
+    }
+  }
 
 .col_icon{
     margin-top: 5vh;
@@ -87,9 +109,9 @@ a.nav-link {
 * About Me Begining
 */
 
-.aboutme_section{
-    height: 80vh;
-}
+ .aboutme_section{
+    padding-bottom: 10vh;
+} 
 
 .title{
     margin-top: 50px;
@@ -117,20 +139,11 @@ a.nav-link {
 }
 
 /*
-* Experiences Me Begining
+* Experiences  Begining
 */
 
- /* .experience_img{
-     text-align: center;
-} 
-
-.experience_img img{
-    width: 90vw;
-    padding-top: 50px;
-} */
-
 /*
-* Experiences Me End
+* Experiences  End
 */
 
 /*
@@ -183,6 +196,7 @@ a.nav-link {
 
 .blog_post_img{
     border-radius: 20px;
+    display: inline-block !important;
 }
 
 .blog_post_date {

@@ -1,4 +1,3 @@
-/*! CSS Used from: https://webthemez.com/demo/john-bootstrap-one-page-html5-free-resume-template/css/bootstrap.min.css */
 section{
     display:block;
 }
@@ -118,7 +117,7 @@ section{
  .container:after,.row:after{
     clear:both;
 }
-/*! CSS Used from: https://webthemez.com/demo/john-bootstrap-one-page-html5-free-resume-template/css/style.css */
+
  a,a:hover,a:active{
     outline:0px!important;
     text-decoration:none;
@@ -217,7 +216,7 @@ section{
     border-left:20px solid #f5f5f5;
     -webkit-transition:border-left-color .3s ease-out;
     transition:border-left-color .3s ease-out;
-}
+} 
  .news-item.right .news-content:after{
     position:absolute;
     left:-40px;
@@ -251,7 +250,22 @@ section{
  .news-item.right .news-content:before{
     left:-55px;
     right:auto;
-} 
+}
+
+@media only screen and (max-width: 600px) {
+    .news-item .news-content:after{
+        display:none;
+    }
+     .news-item .news-content:before{
+        display:none;
+    }
+    } 
+  }
+
+
+
+
+  
  .news-content .date{
     position:absolute;
     width:80px;
@@ -327,10 +341,10 @@ section{
     }
 }
 /*! CSS Used fontfaces */
- @font-face{
+/* @font-face{
     font-family:'FontAwesome';
     src:url('https://webthemez.com/demo/john-bootstrap-one-page-html5-free-resume-template/fonts/fontawesome-webfont.eot?v=4.2.0');
     src:url('https://webthemez.com/demo/john-bootstrap-one-page-html5-free-resume-template/fonts/fontawesome-webfont.eot#iefix&v=4.2.0') format('embedded-opentype'), url('https://webthemez.com/demo/john-bootstrap-one-page-html5-free-resume-template/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('https://webthemez.com/demo/john-bootstrap-one-page-html5-free-resume-template/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('https://webthemez.com/demo/john-bootstrap-one-page-html5-free-resume-template/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
     font-weight:normal;
     font-style:normal;
-}
+}*/
