@@ -35,26 +35,38 @@
 
             <div class="col-md-3 section footer_section_four">
                 <h1 class="h5 text-light">Latest Posts</h1>
-                <div class="row">
-                    <a href="">
-                        <p>Title Title Title Title Title</p>
-                        <small>date</small>
-                        <p>Sumary Sumary Sumary Sumary Sumary Sumary Sumary </p>
-                    </a>
+                <div class="progress" style="height: 1px;"></div>
+
+                <div class="row post_row">
+                    <div class="col-md-12">
+                        <p>
+                        <a href="">Title Title Title Title Title</a>
+                        </p> 
+                    </div>
+                    <div class="col-md-12">
+                        <p class="footer_post_date">21/12/2018</p>
+                    </div>                   
                 </div>
-                <div class="row">
-                    <a href="">
-                        <p>Title Title Title Title Title</p>
-                        <small>date</small>
-                        <p>Sumary Sumary Sumary Sumary Sumary Sumary Sumary </p>
-                    </a>
+
+                <div class="row post_row">
+                    <div class="col-md-12">
+                        <p>
+                        <a href="">Title Title Title Title Title</a>
+                        </p> 
+                    </div>
+                    <div class="col-md-12">
+                        <p class="footer_post_date">21/12/2018</p>
+                    </div>                   
                 </div>
+
             </div>
             
         </div>
     </div>
     
-    <div class="row">
-        <p>copy right</p>
+    <div class="row copy_right">
+        <div class="col-md-12">
+            <p class="copy_right_p">All Rights Reserved by Kadir Emre ÖZCAN -(with all love)</p>
+        </div>        
     </div>
 </div>
