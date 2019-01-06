@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    /* overflow-x:hidden; */
+    overflow-x:hidden;
 }
 
 /*
@@ -44,6 +44,28 @@ a.nav-link {
 .solidify a.nav-link{
     font-size: 13px;  
 }
+
+@media only screen and (max-width: 769px) {
+    nav.navbar{
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        text-align: center;
+    }
+
+    li.nav-item {
+        border: 0px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        padding:20px 0;
+    }
+
+    a.nav-link {
+        font-size: 20px;  
+    }
+
+    .solidify a.nav-link{
+        font-size: 20px;   
+    }
+
+  }
 
 
 /*
@@ -173,10 +195,6 @@ a.nav-link {
     color: rgb(255, 255, 255)
 }
 
-.blog_post_title{
-    text-decoration: none !important;
-    color: rgba(0, 0, 0, 0.8);
-}
 
 .blog_post_card:hover a{
     color:rgb(255, 255, 255);
@@ -186,27 +204,6 @@ a.nav-link {
     color: rgb(255, 255, 255)
 }
 
-.blog_post_title:hover{
-    color:rgb(0, 0, 0);
-}
-
-.blog_post_card_row{
-    margin-top: 15px;
-}
-
-.blog_post_img{
-    border-radius: 20px;
-    display: inline-block !important;
-}
-
-.blog_post_date {
-    font-size: 14px;
-}
-
-.blog_post_tags{
-    text-align: right;
-    padding-bottom: 10px;
-}
 .blog_post_more{
     font-size: 1.1em;
     font-weight: bold;
@@ -237,18 +234,18 @@ a.nav-link {
 * From My Project Begin
 */
 .fromMyProject_section{
-    margin-top: 50px; 
+    /*  margin-top: 50px;  */
     padding-bottom: 100px;   
 }
 
 .flip-container{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 /* entire container, keeps perspective */
 .flip-container {
     perspective: 1000px;
-    margin: 0;
+    margin-top: 20px;
 }
 
 /* flip the pane when hovered */
@@ -258,10 +255,20 @@ a.nav-link {
 
 .flip-container, .front, .back {
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
+    height: 300px;
     text-align: center;  
     
 }
+
+/* @media screen and (max-width: 1366px) and (min-width: 1024px) {
+    .flip-container, .front, .back {
+        width: 100%;
+        height: 25vh;
+        text-align: center;  
+        
+    }
+  } */
 
 /* flip speed goes here */
 .flipper {
@@ -330,7 +337,7 @@ a.nav-link {
 * Contact Section Begin
 */
 .contact_section{
-    margin-top: 50px;
+    margin-top: 3   vh;
 }
 .contact_text{
     border: 3px solid #293540;
@@ -376,6 +383,14 @@ a.nav-link {
 .section{
     padding-top: 10px;
 }
+
+@media only screen and (max-width: 760px) {
+    .section{
+        padding-top: 30px;
+        text-align: center;
+        height: 30vh;
+    }
+  }
 
 /* Section One*/
 
@@ -447,12 +462,13 @@ a.nav-link {
 }
 
 .copy_right{
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     text-align: center;
     background-color: #111111;
 }
 .copy_right_p{    
     text-align: center;
     color: #FFFFFF !important;
+    font-size: 13px;
 }
