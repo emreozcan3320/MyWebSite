@@ -1,60 +1,102 @@
-<!-- Blog Entries Column -->
 <div class="col-md-8">
 
-<h1 class="my-4">Page Heading
-  <small>Secondary Text</small>
-</h1>
+      <!-- Page Heading -->
+      <h1 class="my-4">Page Heading
+        <small>Secondary Text</small>
+      </h1>
 
-<!-- Blog Post -->
-<div class="card mb-4">
-  <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-  <div class="card-body">
-    <h2 class="card-title">Post Title</h2>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-    <a href="#" class="btn btn-primary">Read More →</a>
-  </div>
-  <div class="card-footer text-muted">
-    Posted on January 1, 2017 by
-    <a href="#">Start Bootstrap</a>
-  </div>
-</div>
+      <!-- Project One -->
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/300x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h3>Project One</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+      <!-- /.row -->
 
-<!-- Blog Post -->
-<div class="card mb-4">
-  <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-  <div class="card-body">
-    <h2 class="card-title">Post Title</h2>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-    <a href="#" class="btn btn-primary">Read More →</a>
-  </div>
-  <div class="card-footer text-muted">
-    Posted on January 1, 2017 by
-    <a href="#">Start Bootstrap</a>
-  </div>
-</div>
+      <hr>
 
-<!-- Blog Post -->
-<div class="card mb-4">
-  <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
-  <div class="card-body">
-    <h2 class="card-title">Post Title</h2>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-    <a href="#" class="btn btn-primary">Read More →</a>
-  </div>
-  <div class="card-footer text-muted">
-    Posted on January 1, 2017 by
-    <a href="#">Start Bootstrap</a>
-  </div>
-</div>
+      <!-- Project Two -->
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/300x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h3>Project Two</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+      <!-- /.row -->
 
-<!-- Pagination -->
-<ul class="pagination justify-content-center mb-4">
-  <li class="page-item">
-    <a class="page-link" href="#">← Older</a>
-  </li>
-  <li class="page-item disabled">
-    <a class="page-link" href="#">Newer →</a>
-  </li>
-</ul>
+      <hr>
 
-</div>
+      <!-- Project Three -->
+      <div class="row">
+        <div class="col-md-4">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/300x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h3>Project Three</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Four -->
+      <div class="row">
+
+        <div class="col-md-4">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/300x300" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h3>Project Four</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Pagination -->
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">«</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">»</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
