@@ -90,6 +90,16 @@ a.nav-link {
     text-align:center;
 }
 
+.home_title {
+    font-family: Raleway, sans-serif;
+  }
+
+.home_sub_title{
+    font-family: Raleway, sans-serif;
+    font-weight: bolder;
+   color: #D54A3F !important;
+}
+
 @media only screen and (max-width: 600px) {
     .home_title {
       font-size: 50px;
@@ -111,16 +121,13 @@ a.nav-link {
 }
 .fa-linkedin-in:hover{
     color: #0270AD;
-    font-size: 3.1em;
 }
 
 .fa-github:hover{
-    color : #753A58;    
-    font-size: 3.1em;
+    color : #753A58; 
 }
 .fa-envelope:hover{
-    color: #D54A3F;    
-    font-size: 3.1em;
+    color: #D54A3F; 
 }
 
 /*
