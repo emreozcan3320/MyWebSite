@@ -6,21 +6,21 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item nav-item-custom active">
                 <a class="nav-link" href="#">HOME 
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item-custom">
                 <a class="nav-link" href="#">EXPERIENCE</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item-custom">
                 <a class="nav-link" href="#">PROJECTS</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item-custom">
                 <a class="nav-link" href="#">BLOG</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item-custom">
                 <a class="nav-link" href="#">CONTACT</a>
             </li>
             </ul>
