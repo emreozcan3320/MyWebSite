@@ -12,32 +12,29 @@
 
 </head>
 <body>
-<header>
-   <div class="container">
-      <div class="nav-scroller py-1 mb-2">
-         <nav class="nav d-flex justify-content-center">
-            <a class="p-2 text-muted" href="#">HOME</a>
-            <a class="p-2 text-muted" href="#">EXPERIENCE</a>
-            <a class="p-2 text-muted" href="#">PROJECTS</a>
-            <a class="p-2 text-muted" href="#">BLOG</a>
-            <a class="p-2 text-muted" href="#">CONTACT</a>
-         </nav>
-         <hr>
-         <nav class="nav d-flex justify-content-center">
-            <a class="p-2 text-muted" href="#">Java</a>
-            <a class="p-2 text-muted" href="#">AI</a>
-            <a class="p-2 text-muted" href="#">IOT</a>
-            <a class="p-2 text-muted" href="#">Imige Processing</a>
-            <a class="p-2 text-muted" href="#">Big Data</a>
-            <a class="p-2 text-muted" href="#">Scala</a>
-         </nav>
-      </div>
-   </div>
-</header>
 
-    <!-- populer post section come  -->
-    
-<div class="container main_blog_container">
-    <div class="container blog_posts_container">
-        <div class="row blog_posts_row">
+<?php if(is_front_page()): ?>
+   <div class="container navbar_container">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent menu">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+         </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <?php wp_nav_menu(array(
+                  'theme_location'=>'primary',
+                  'container' => 'ul',
+                  'menu_class'=> 'navbar-nav ml-auto'
+
+                  ));?>
+            </div>
+      </nav>
+   </div>
+<?php else : ?>
+   <?php wp_nav_menu(array('theme_location'=>'primary'));?>
+<?php endif;  ?>
+
+
+
+
             

@@ -78,7 +78,8 @@ a.nav-link {
 
 .home_section{
     height: 100vh;
-    background-image: url("../images/banner/home_banner_bw.jpg");
+    /* background-image: url("../images/banner/home_banner_bw.jpg"); */
+    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     position:relative;
 }

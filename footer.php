@@ -2,9 +2,9 @@
         
         
         
-        </div>
-    </div>
-</div>
+
+
+<?php wp_nav_menu(array('theme_location'=>'secondary'));?>
 
 <footer>
    <div class="container-fluid footer_cantainer">
