@@ -20,14 +20,14 @@
                <span class="navbar-toggler-icon"></span>
          </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <?php wp_nav_menu(array(
-                  'theme_location'=>'primary',
-                  'container' => 'ul',
-                  'menu_class'=> 'navbar-nav ml-auto'
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <?php /*wp_nav_menu(array(
+                     'theme_location'=>'primary',
+                     'container' => 'ul',
+                     'menu_class'=> 'navbar-nav ml-auto'
+                     ));*/?>
 
-                  ));?>
-            </div>
+         </div>             
       </nav>
    </div>
 <?php else : ?>

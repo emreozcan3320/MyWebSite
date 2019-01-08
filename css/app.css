@@ -19,12 +19,12 @@ ul.navbar-nav.ml-auto {
     margin-right: 5vw;
 }
 
-li.nav-item-custom {
+li.nav-item {
     border: 1px solid #ffffff;
     margin-left: 2vw;
     transition: border 0.5s ease;
 }
-li.nav-item-custom:hover {
+li.nav-item:hover {
     border: 1px solid rgba(255, 102, 0, 0.0);
 }
 
@@ -51,7 +51,7 @@ a.nav-link {
         text-align: center;
     }
 
-    li.nav-item-custom {
+    li.nav-item {
         border: 0px solid #ffffff;
         border-bottom: 1px solid #ffffff;
         padding:20px 0;
@@ -78,8 +78,7 @@ a.nav-link {
 
 .home_section{
     height: 100vh;
-    /* background-image: url("../images/banner/home_banner_bw.jpg"); */
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../images/banner/home_banner_bw.jpg");
     background-size: cover;
     position:relative;
 }
