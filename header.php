@@ -21,17 +21,32 @@
          </button>
 
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <?php /*wp_nav_menu(array(
-                     'theme_location'=>'primary',
-                     'container' => 'ul',
-                     'menu_class'=> 'navbar-nav ml-auto'
-                     ));*/?>
-
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item nav-item-custom active">
+                  <a class="nav-link" href="http://localhost/wp_blog/wordpress/">HOME 
+                     <span class="sr-only">(current)</span>
+                  </a>
+               </li>
+               <li class="nav-item nav-item-custom">
+                  <a class="nav-link" href="#">EXPERIENCE</a>
+               </li>
+               <li class="nav-item nav-item-custom">
+                  <a class="nav-link" href="#">PROJECTS</a>
+               </li>
+               <li class="nav-item nav-item-custom">
+                  <a class="nav-link" href="http://localhost/wp_blog/wordpress/blog/">BLOG</a>
+               </li>
+               <li class="nav-item nav-item-custom">
+                  <a class="nav-link" href="#">CONTACT</a>
+               </li>
+            </ul>
          </div>             
       </nav>
    </div>
 <?php else : ?>
-   <?php wp_nav_menu(array('theme_location'=>'primary'));?>
+   <div class="container">
+      <?php get_template_part( 'template-parts/blog/bp_navbar_section', 'none' ); ?>
+   </div>   
 <?php endif;  ?>
 
 
