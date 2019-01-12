@@ -2,8 +2,9 @@
 
 <?php get_header(); ?>
 
+<?php echo get_query_var('paged'); ?>
 
-<?php get_template_part( 'template-parts/blog/bp_popular_post_section', 'none' ); ?>
+<?php  get_template_part( 'template-parts/blog/bp_popular_post_section', 'none' ); ?>
 
 
 
@@ -12,7 +13,6 @@
     $args = array(
         'post_type'              => array( 'post' ),
         'nopaging'               => false,
-        'posts_per_page'         => '5',
         'offset'                 => '1',
     );
 
@@ -28,18 +28,29 @@
             <?php 
                 if(  $query->have_posts() ):
                     while(  $query->have_posts() ) :  $query->the_post();?>                    
-                        <?php get_template_part( 'loop-templates/content'); ?>                            
-                    <?php endwhile;
-                endif;  
+                        <?php get_template_part( 'loop-templates/content'); ?>
+                    <?php endwhile;?>
+
+                    
+                    <!-- The pagination component -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <?php echo paginate_links();?>
+                        </div>
+                    </div>
+                    
+                <?php endif;  
                 wp_reset_postdata();          
             ?>                    
         </div>
 
 
-<?php get_sidebar(); ?>
+        <?php get_sidebar(); ?>
 
         </div>
     </div>
 </div>
+
+
 
 <?php get_footer(); ?>

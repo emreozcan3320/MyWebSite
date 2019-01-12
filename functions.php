@@ -58,3 +58,7 @@ function allweltschmerz_widget_setup() {
 	
 }
 add_action('widgets_init','allweltschmerz_widget_setup');
+
+
+
+
