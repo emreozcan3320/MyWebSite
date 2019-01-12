@@ -5,6 +5,7 @@
     ===================
 */
 function allweltschmerz_scripts_enqueue(){
+    wp_enqueue_style('hata', get_template_directory_uri().'/css/404.css', array(), '1.0.0','all');
     wp_enqueue_style('time-line', get_template_directory_uri().'/css/time-line.css', array(), '1.0.0','all');
     wp_enqueue_style('blog', get_template_directory_uri().'/css/blog.css', array(), '1.0.0','all');
     wp_enqueue_style('app', get_template_directory_uri().'/css/app.css', array(), '1.0.0','all');
