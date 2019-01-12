@@ -2,6 +2,12 @@
 
     <!-- Blog Post -->
     <div class="card mb-4">
+        <div class="card-header">
+            <strong class="d-inline-block mb-2 text-primary category_tag">
+                <?php echo allweltschmerz_get_terms($post->ID, 'field'); ?>
+            </strong>
+        </div>
+
         <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
         <a href="<?php echo esc_url( get_permalink());?>">
             <img class="card-img-top d-none d-lg-block" src="<?php echo $image[0]; ?>" style="height:40vh;object-fit: cover;">
