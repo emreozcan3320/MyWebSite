@@ -2,8 +2,6 @@
 
 <?php get_header(); ?>
 
-<?php echo get_query_var('paged'); ?>
-
 <?php  get_template_part( 'template-parts/blog/bp_popular_post_section', 'none' ); ?>
 
 

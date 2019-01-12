@@ -59,6 +59,16 @@ function allweltschmerz_widget_setup() {
 }
 add_action('widgets_init','allweltschmerz_widget_setup');
 
+/*
+    ====================================================
+    Remove Wordpress version from wp_head() Function
+    ====================================================
+*/
 
+function allweltschmerz_remove_version(){
+    return '';
+}
+
+add_filter('the_generator','allweltschmerz_remove_version');
 
 

@@ -1,10 +1,10 @@
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset');?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php bloginfo('title'); ?></title>
-
+    <title><?php bloginfo('name'); ?><?php wp_title('|');?></title>
+    <meta name="description" content="<?php bloginfo('description');?>">  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
@@ -23,7 +23,7 @@
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                <li class="nav-item nav-item-custom active">
-                  <a class="nav-link" href="http://localhost/wp_blog/wordpress/">HOME 
+                  <a class="nav-link" href="<?php echo get_site_url();?>/">HOME 
                      <span class="sr-only">(current)</span>
                   </a>
                </li>
@@ -34,7 +34,7 @@
                   <a class="nav-link" href="#">PROJECTS</a>
                </li>
                <li class="nav-item nav-item-custom">
-                  <a class="nav-link" href="http://localhost/wp_blog/wordpress/blog/">BLOG</a>
+                  <a class="nav-link" href="<?php echo get_site_url();?>/blog/">BLOG</a>
                </li>
                <li class="nav-item nav-item-custom">
                   <a class="nav-link" href="#">CONTACT</a>
