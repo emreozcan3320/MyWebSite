@@ -349,6 +349,10 @@ section{
     background:#F74D4D;
     border-radius:5px;
 }
+
+
+/*News Item */
+
  .news-item{
     padding-bottom:45px;
 }
@@ -356,6 +360,7 @@ section{
     float:right;
     margin-top:40px;
 }
+
  .news-item .news-content{
     margin:20px 30px 0 0;
     position:relative;
@@ -388,6 +393,7 @@ section{
         box-shadow:5px 5px 0 rgba(0,0,0,0.08);
     }
 }
+
   .news-item .news-content:after{
     display:block;
     content:"";
@@ -449,10 +455,6 @@ section{
     }
      
   }
-
-
-
-
   
  .news-content .date{
     position:absolute;
@@ -473,6 +475,9 @@ section{
     font-weight:400;
     line-height:48px;
 }
+
+
+
  .news-content .news-title{
     font-size:24px;
     font-weight:300;
@@ -536,6 +541,58 @@ section{
     font-weight:normal;
     font-style:normal;
 }*/
+
+/*
+    ===========================
+    Content Custom
+    ===========================
+*/
+
+.news-item-custom{
+    padding-bottom:45px;
+}
+ .news-item-custom.right{
+    float:right;
+    margin-top:40px;
+}
+
+ .news-item-custom .news-content{
+    margin:20px 30px 0 0;
+    position:relative;
+    padding:30px;
+    background:#f5f5f5;
+    border-radius:10px;
+    box-shadow:-5px 5px 0 rgba(0,0,0,0.08);
+    -webkit-transition:all .3s ease-out;
+    transition:all .3s ease-out;
+}
+
+.news-item-custom .news-content .news-title{
+    text-align: center;
+}
+
+ .news-item-custom:hover .news-content{
+    background:#F74D4D;
+    color:#fff;
+}
+ .news-item-custom.right .news-content{
+    margin:20px 0 0 30px;
+    box-shadow:5px 5px 0 rgba(0,0,0,0.08);
+}
+
+@media only screen and (max-width: 760px) {
+    .news-item-custom .news-content{
+        margin:0;
+        /* padding:30px; */
+        padding-left:30px;
+    }
+    .news-item-custom.right .news-content{
+        margin:20px 0 0 0;
+        box-shadow:5px 5px 0 rgba(0,0,0,0.08);
+    }
+}
+
+
 
 /*
 * Experiences  End

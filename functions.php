@@ -180,8 +180,24 @@ function allweltschmerz_get_terms( $postID, $term ){
 	
 }
 
+/*
+	==========================================
+	Get Images From Library
+	==========================================
+*/
 
+function allweltschmerz_get_experience_logo($attachment_id){
+$image_attributes = wp_get_attachment_image_src( $attachment_id, array('80','80') );
+if($image_attributes ){
+	return '<img 
+		src="'.$image_attributes[0].'" 
+		width="'.$image_attributes[1].'" 
+		height="'.$image_attributes[2].'"
+	 	alt="'.get_post_meta($attachment_id, '_wp_attachment_image_alt', true).'" 
+	 	style="border-radius:20px;"/>';
+}
 
+}
 
 
 
