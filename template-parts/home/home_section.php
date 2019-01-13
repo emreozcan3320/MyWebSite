@@ -10,9 +10,9 @@
         </div>
         <div class="col-md-8 mx-md-auto  col_icon">  
             <p class="text-center text-light icons" >
-                <i class="fab fa-linkedin-in fa-3x social_icon icon "></i>
-                <i class="fab fa-github fa-3x social_icon icon"></i>
-                <i class="far fa-envelope fa-3x social_icon icon"></i>
+                <a class="text-light"  target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/kadir-emre-%C3%B6zcan/?locale=en_US" ><i class="fab fa-linkedin-in fa-3x social_icon icon "></i></a>
+                <a class="text-light"  target="_blank" rel="noopener noreferrer" href="https://github.com/emreozcan3320" ><i class="fab fa-github fa-3x social_icon icon"></i></a>
+                <a class="text-light"  target="_blank" rel="noopener noreferrer" href="<?php echo get_site_url();?>/contact" ><i class="far fa-envelope fa-3x social_icon icon"></i></a>
             </p>
         </div>
     </div>

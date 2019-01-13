@@ -1,6 +1,6 @@
 
 
-<div class="col-lg-6 col-md-6 mb-6">
+<div class="col-lg-6 col-md-6 mb-6 lastTwoPost_col">
     <div class="card">
     <?php the_post_thumbnail(array(500,325), array('class' => 'card-img-top'));?>
     <div class="container-fluid card_custom_body" style="height:300px;">                

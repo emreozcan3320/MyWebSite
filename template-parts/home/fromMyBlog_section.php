@@ -23,18 +23,20 @@
          <?php endwhile;?>
    <?php endif; wp_reset_postdata();?>
 
-     
+   
    </div>
 
    
    <div class="row">
-      <div class="col-10 mx-auto blog_post_card readmore_card">
-         <p>
-            <a class="blog_post_more more_alone" href="<?php echo get_site_url();?>/blog/">Read More <i class="fas fa-angle-right"></i></a>
-         </p>
-         <div>  
-         </div>
+      
+   <div class="col-10 mx-auto blog_post_card readmore_card">
+      <p>
+         <a class="blog_post_more more_alone" href="<?php echo get_site_url();?>/blog/">Read More <i class="fas fa-angle-right"></i></a>
+      </p>
+      <div>  
       </div>
+   </div>
+
    </div>
    
 </div>

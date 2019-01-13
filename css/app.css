@@ -109,7 +109,9 @@ a.nav-link {
         font-size: 30px;
     }
   }
-
+.col_icon .icons a{
+    text-decoration: none !important;
+}
 .col_icon{
     margin-top: 5vh;
 }
@@ -606,6 +608,10 @@ section{
     padding-bottom: 50px;
 }
 
+.lastTwoPost_col{
+    margin-bottom:10px;
+}
+
 .blog_post-over-row{
     padding-top: 50px;
 }
@@ -893,6 +899,23 @@ section{
     color: #F74D4D;
     font-size: 0.8em;
 }
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    left: 10px;
+ }
+
+ #top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    left: 10px;
+ }
+
+ .back_to_up{
+    text-decoration: none;
+ }
+
 
 .copy_right{
     padding-top: 1vh;

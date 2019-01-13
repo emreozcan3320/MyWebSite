@@ -31,10 +31,10 @@
                   <a class="nav-link" href="<?php echo get_site_url();?>/?post_type=project">PROJECTS</a>
                </li>
                <li class="nav-item nav-item-custom">
-                  <a class="nav-link" href="<?php echo get_site_url();?>/blog/">BLOG</a>
+                  <a class="nav-link" href="<?php echo get_site_url();?>/blog">BLOG</a>
                </li>
                <li class="nav-item nav-item-custom">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" href="<?php echo get_site_url();?>/contact">CONTACT</a>
                </li>
             </ul>
          </div>             

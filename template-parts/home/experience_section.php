@@ -22,7 +22,7 @@
                                     <div class="news-content text-center"> 
                                         <h1 class="news-title h2">Begining Istanbul University</h1> 
                                         <span>Student</span>
-                                        <p>
+                                        <p class=" d-flex justify-content-center" >
                                                 <?php echo allweltschmerz_get_experience_logo(116);?>
                                         </p> 
                                     </div>
@@ -253,7 +253,7 @@
                                     <div class="news-content text-center">
                                         <h1 class="news-title h2">Graduated From Istanbul University</h1> 
                                         <span>End Of University </span>                                       
-                                        <p>
+                                        <p class=" d-flex justify-content-center" >
                                             <?php echo allweltschmerz_get_experience_logo(116);?>
                                         </p> 
                                         
@@ -304,7 +304,7 @@
                                 </div>
 
                                 
-                                    <div class="news-content">
+                                    <div class="news-content d-none d-lg-block">
                                         <div class="date-title">
                                             <span>2018 to Present</span>
                                         </div>

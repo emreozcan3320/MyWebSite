@@ -189,7 +189,7 @@ function allweltschmerz_get_terms( $postID, $term ){
 function allweltschmerz_get_experience_logo($attachment_id){
 $image_attributes = wp_get_attachment_image_src( $attachment_id, array('80','80') );
 if($image_attributes ){
-	return '<img 
+	return '<img class="d-none d-lg-block"
 		src="'.$image_attributes[0].'" 
 		width="'.$image_attributes[1].'" 
 		height="'.$image_attributes[2].'"
