@@ -8,64 +8,37 @@
 
     <div class="row flip-over-row">
 
-        <div class="col-md-4 flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front" style="background: url(http://placehold.it/500x500) 0 0 no-repeat;">
-                </div>
-                <div class="back container">
-                    <div class="row">
-                        <div class="col-md-12 back-frame">                        
-                            <p>Mozilla Web Developer, MooTools &amp; jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
-                            <br>
-                            <br>
-                            <p>
-                                <a class="project_read_more" href="#">Read More <i class="fas fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
+    <?php 
+        // WP_Query arguments
+        $args = array(
+            'post_type'              => array( 'project' ),
+            'posts_per_page'         => '3',
+        );
 
-        <div class="col-md-4 flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front" style="background: url(http://placehold.it/500x500) 0 0 no-repeat;">
-                </div>
-                <div class="back container">
-                    <div class="row">
-                        <div class="col-md-12 back-frame">                        
-                            <p>Mozilla Web Developer, MooTools &amp; jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
-                            <br>
-                            <br>
-                            <p>
-                                <a class="project_read_more" href="#">Read More <i class="fas fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
+        // The Query
+        $query = new WP_Query( $args ); 
+    ?>
 
-        <div class="col-md-4 flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-                <div class="front" style="background: url(http://placehold.it/500x500) 0 0 no-repeat;">
-                </div>
-                <div class="back container">
-                    <div class="row">
-                        <div class="col-md-12 back-frame">                        
-                            <p>Mozilla Web Developer, MooTools &amp; jQuery Consultant, MooTools Core Developer, Javascript Fanatic, CSS Tinkerer, PHP Hacker, and web lover.</p>
-                            <br>
-                            <br>
-                            <p>
-                                <a class="project_read_more" href="#">Read More <i class="fas fa-angle-right"></i></a>
-                            </p>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
+    <?php 
+        if(  $query->have_posts() ):
+            while(  $query->have_posts() ) :  $query->the_post();?>                    
+                <?php get_template_part( 'loop-templates/content','lastThreeProject'); ?>
+            <?php endwhile;?>        
+        <?php endif;  
+        wp_reset_postdata();          
+    ?>               
+    
     </div>
 
-    
+    <div class="row">
+      <div class="col-10 mx-auto blog_post_card readmore_card">
+         <p>
+            <a class="blog_post_more more_alone" href="<?php echo get_site_url();?>/?post_type=project">See More <i class="fas fa-angle-right"></i></a>
+         </p>
+         <div>  
+         </div>
+      </div>
+   </div>
+
     
 </div>

@@ -12,11 +12,7 @@
             <div class="col-md-3 section footer_section_two">
                <h1 class="h5 text-light">Tag Widget</h1>
                <div class="progress" style="height: 1px;"></div>
-               <a href=""><span class="tag">Java</span></a>
-               <a href=""><span class="tag">JVM</span></a>
-               <a href=""><span class="tag">Python</span></a>
-               <a href=""><span class="tag">Artificial Intelligence</span></a>
-               <a href=""><span class="tag">Neural Network</span></a>
+               <?php allweltschmerz_get_tags();?> 
             </div>
             <div class="col-md-3 section footer_section_three">
                <h1 class="h5 text-light">Important Links</h1>

@@ -199,9 +199,48 @@ if($image_attributes ){
 
 }
 
+/*
+	=========================
+	The Excerpt Charlength
+	========================
+*/
 
+function the_excerpt_max_charlength($charlength) {
+	$excerpt = get_the_excerpt();
+	$charlength++;
 
+	if ( mb_strlen( $excerpt ) > $charlength ) {
+		$subex = mb_substr( $excerpt, 0, $charlength - 5 );
+		$exwords = explode( ' ', $subex );
+		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+		if ( $excut < 0 ) {
+			echo mb_substr( $subex, 0, $excut );
+		} else {
+			echo $subex;
+		}
+		echo '[...]';
+	} else {
+		echo $excerpt;
+	}
+}
 
+/*
+	=========================
+	The Excerpt Charlength
+	========================
+*/
+function allweltschmerz_get_tags(){
+	$tags = get_tags();
+	$html = '';
+	foreach ( $tags as $tag ) {
+	$tag_link = get_tag_link( $tag->term_id );
+
+	$html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='{$tag->slug}'><span class='tag'>";
+	$html .= "{$tag->name}</span></a>";
+	}
+	$html .= '';
+	echo $html;
+}
 
 
 
