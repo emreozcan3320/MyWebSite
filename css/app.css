@@ -941,4 +941,26 @@ section{
   .widget a:hover {
     color: rgba(0, 0, 0, 0.8);
   }
+
+/*
+    ============================
+      PROJECT LIST PAGE
+    ============================
+*/
+.card_custom_body{
+    padding: 20px;
+}
   
+/*
+    ============================
+        SINGLE PROJECT PAGE
+    ============================
+*/
+
+.project_container p {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Sans-Serif,Segoe UI;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
